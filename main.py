@@ -2,7 +2,7 @@ import requests, telebot, re
 from bs4 import BeautifulSoup
 from random import randint
 
-bot = telebot.TeleBot('1605853735:AAGYGN3uWIGJO4MY3vCTMX1qnAjNL80U8UY')
+bot = telebot.TeleBot('<TOKEN>')
 
 @bot.message_handler(commands=['start'])
 def startMessage(message):

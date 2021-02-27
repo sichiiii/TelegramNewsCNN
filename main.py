@@ -26,7 +26,7 @@ def getTextArticle(message, articleUrl):
 
 def checkLength(message, final):
     if len(final) > 4096:
-        for x in range(0, len(finalz), 4096):
+        for x in range(0, len(final), 4096):
             bot.send_message(message.chat.id, final[x:x+4096])
     else:
         bot.send_message(message.chat.id, final)

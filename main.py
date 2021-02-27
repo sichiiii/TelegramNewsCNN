@@ -5,7 +5,7 @@ from random import randint
 bot = telebot.TeleBot('<TOKEN>')
 
 @bot.message_handler(commands=['start'])
-def startMessage(message):
+def getNewArticle(message):
     url = 'http://lite.cnn.com/en'
     page = requests.get(url)
     soup = BeautifulSoup(page.content, features="lxml")
